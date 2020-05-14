@@ -1,22 +1,60 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
 
   const routes = [
   {
-    path: '/',
-    name: 'Home',
-    component: Home
+    path: '/login',
+    name: 'Login',
+    component:  () => import('../views/login')
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    path: '/',
+    redirect: '/login'
+  },
+  {
+    path: '/',
+    name: 'main-view',
+    component: () => import('../views/main-view'),
+    children: [
+      {
+        path: 'home',
+        name: 'home',
+        component: () => import('../views/home'),
+        meta: { title: '首页' }
+      },
+      {
+        path: 'up-down-layout',
+        name: 'up-down-layout',
+        component: () => import('../views/up-down-layout'),
+        meta: { title: '上下布局' }
+      },
+      {
+        path: 'left-right-layout',
+        name: 'left-right-layout',
+        component: () => import('../views/left-right-layout'),
+        meta: { title: '左右布局' }
+      },
+      {
+        path: 'center-layout',
+        name: 'center-layout',
+        component: () => import('../views/center-layout'),
+        meta: { title: '居中布局' }
+      },
+      {
+        path: 'left-upanddown-layout',
+        name: 'left-upanddown-layout',
+        component: () => import('../views/left-upanddown-layout'),
+        meta: { title: '左上下布局' }
+      },
+      {
+        path: 'up-leftandright-layout',
+        name: 'up-leftandright-layout',
+        component: () => import('../views/up-leftandright-layout'),
+        meta: { title: '上左右布局' }
+      }
+    ]
   }
 ]
 

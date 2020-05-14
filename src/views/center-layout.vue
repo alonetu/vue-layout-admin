@@ -1,11 +1,12 @@
 <template>
-  <div class="home-page"></div>
+  <div class="center-layout"></div>
 </template>
 
 <style lang="scss">
-.home-page {
-  width: 100%;
+.center-layout {
+  width: 60%;
   height: 100%;
+  margin: 0 auto;
   background-color: #82c4c3;
 }
 </style>
