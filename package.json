@@ -1,5 +1,6 @@
 {
   "name": "vue-simple-admin",
+  "author": "alonetu",
   "version": "0.1.0",
   "private": true,
   "scripts": {
