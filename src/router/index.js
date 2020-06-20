@@ -53,13 +53,19 @@ Vue.use(VueRouter)
         name: 'up-leftandright-layout',
         component: () => import('../views/up-leftandright-layout'),
         meta: { title: '上左右布局' }
+      },
+      {
+        path: 'card-layout',
+        name: 'card-layout',
+        component: () => import('../views/card-layout'),
+        meta: { title: '卡片布局' }
       }
     ]
   }
 ]
 
 const router = new VueRouter({
-  mode: 'hash',
+  mode: 'history',
   base: process.env.BASE_URL,
   routes
 })

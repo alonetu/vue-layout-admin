@@ -80,38 +80,43 @@ export default {
       defaultPage: '',
       sideMenu: [
         {
-          icon: 'el-icon-tickets',
+          icon: 'el-icon-document',
           label: '首页',
           path: '/home'
         },
         {
-          icon: 'el-icon-tickets',
+          icon: 'el-icon-document',
           label: '上下布局',
           path: '/up-down-layout'
         },
         {
-          icon: 'el-icon-tickets',
+          icon: 'el-icon-document',
           label: '左右布局',
           path: '/left-right-layout'
         },
         {
-          icon: 'el-icon-tickets',
+          icon: 'el-icon-document',
           label: '居中布局',
           path: '/center-layout'
         },
         {
-          icon: 'el-icon-tickets',
+          icon: 'el-icon-document',
           label: '左上下布局',
           path: '/left-upanddown-layout'
         },
         {
-          icon: 'el-icon-tickets',
+          icon: 'el-icon-document',
           label: '上左右布局',
           path: '/up-leftandright-layout'
+        },
+        {
+          icon: 'el-icon-document',
+          label: '卡片布局',
+          path: '/card-layout'
         }
       ],
       allOpenPage: [{
-        icon: 'el-icon-tickets',
+        icon: 'el-icon-document',
         label: '首页',
         path: '/home'
       }]
