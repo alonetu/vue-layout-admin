@@ -59,6 +59,12 @@ Vue.use(VueRouter)
         name: 'card-layout',
         component: () => import('../views/card-layout'),
         meta: { title: '卡片布局' }
+      },
+      {
+        path: 'left-card-layout',
+        name: 'left-card-layout',
+        component: () => import('../views/left-card-layout'),
+        meta: { title: '左上卡片布局' }
       }
     ]
   }

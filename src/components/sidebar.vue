@@ -113,6 +113,11 @@ export default {
           icon: 'el-icon-document',
           label: '卡片布局',
           path: '/card-layout'
+        },
+        {
+          icon: 'el-icon-document',
+          label: '上下卡片布局',
+          path: '/left-card-layout'
         }
       ],
       allOpenPage: [{
