@@ -21,7 +21,7 @@ Vue.use(VueRouter)
       {
         path: 'home',
         name: 'home',
-        component: () => import('../views/home'),
+        component: () => import('../views/Home'),
         meta: { title: '首页' }
       },
       {

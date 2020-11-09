@@ -91,6 +91,9 @@ export default {
   padding-left: 11px;
   padding-right: 16px;
   box-sizing: border-box;
+  &:hover {
+    cursor: pointer;
+  }
   .el-tag--plain {
     color: #495060;
     border: 1px solid #d8dce5;
